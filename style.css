@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Mplus 1p ExtraBold';
+  src: url('./font/MPLUS1p-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Mplus 1p Regular';
+  src: url('./font/MPLUS1p-Regular.ttf');
+}
+
+* {
+  font-family: 'Mplus 1p Regular';
+}
+
+.matrix {
+  transform: matrix(1, -0.01, 0.01, 1, 0, 0);
+}
+
+.h1, .h1 span {
+  font-family: 'Mplus 1p ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 80px;
+}
+
+.h2 {
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.advantage,
+.team,
+.content {
+  padding: 100px 0;
+}
+
+.advantage__list {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.advantage__item {
+  position: relative;
+  margin: 37px 20px;
+  padding: 30px;
+  max-width: 450px;
+  min-height: 150px;
+}
+
+.advantage__item::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  width: 93.3%;
+  height: 123%;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.advantage__text {
+  padding-left: 20px;
+}
+
+.team__list {
+  margin-bottom: 70px;
+}
+
+.team__item {
+  position: relative;
+  margin: 0 13px;
+  width: 265px;
+  height: 265px;
+  margin-top: 80px;
+}
+
+.team__item::after{
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: '';
+  width: 245px;
+  height: 245px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0 0 5px 5px;
+}
+
+.team__item::before{
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: '';
+  width: 225px;
+  height: 225px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0 0 5px 5px;
+}
+
+.team_photo {
+  position: absolute;
+  z-index: 1;
+}
+
+.team__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: rgba(40, 40, 40, 0.8);
+  z-index: 1;
+}
+
+.team-description {
+  max-width: 800px;
+  transform: rotate(-0.56deg);
+}
+
+.content__tab {
+  min-height: 630px;
+}
+
+.nav {
+  max-width: 530px;
+  width: 100%;
+}
+
+.nav-link {
+  margin: 5px 0;
+  position: relative;
+  width: 98%;
+  min-height: 80px;
+}
+
+.nav-link::after {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 5px;
+  height: 100%;
+  background: var(--primary);
+}
+
+.active .active.nav-link {
+  width: 100%;
+  min-height: 90px;
+  color: var(--primary);
+}
+
+.active .active.nav-link::after {
+  display: block;
+}
+
+.tab__number {
+  font-size: 36px;
+  font-family: 'Mplus 1p ExtraBold';
+}
+
+.card {
+  border-radius: 0;
+}
+
+.card-image {
+  max-width: 580px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.card-time {
+  color: #BDBDBD;
+}
+
+.bnt-size {
+  max-width: 300px;
+  height: 60px;
+  font-family: 'Mplus 1p ExtraBold';
+}
+
+@media screen and (max-width: 900px) {
+  .card-image {
+    height: 200px;
+  }
+
+  .tab-pane {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .advantage,
+  .team,
+  .content {
+    padding: 50px 0;
+  }
+
+  .active .active.nav-link {
+    min-height: 80px;
+  }
+}

@@ -1,0 +1,19 @@
+$primary:    #0F68E4 !default;
+$blue:       rgba(15, 104, 228, 0.5) !default;
+$light-blue: rgba(15, 104, 228, 0.15) !default;
+$dark:       #171717 !default;
+$light:      #ffffff !default;
+$info:       rgba(255, 255, 255, 0.7) !default;
+$secondary:  #3D3D3D !default;
+
+$theme-colors: (
+  "primary":      $primary,
+  "blue":         $blue,
+  "light-blue":   $light-blue,
+  "secondary":    $secondary,
+  "light":        $light,
+  "info":         $info,
+  "dark":         $dark
+) !default;
+
+$link-color:      #171717 !default;
